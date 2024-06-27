@@ -1,0 +1,36 @@
+/* DROP ALL THE VIEWS*/
+-- Drop the view for Donor Details
+DROP VIEW IF EXISTS `donor_details`;
+
+-- Drop the view for Blood Bank Inventory
+DROP VIEW IF EXISTS `blood_bank_inventory`;
+
+-- Drop the view for Donations Details
+DROP VIEW IF EXISTS `donations_details`;
+
+-- Drop the view for Available Blood
+DROP VIEW IF EXISTS `available_blood`;
+
+
+/*DROP ALL THE TABLES*/
+-- Drop the Donations table
+DROP TABLE IF EXISTS `donations`;
+
+-- Drop the Donors table
+DROP TABLE IF EXISTS `donors`;
+
+-- Drop the Blood Bank table
+DROP TABLE IF EXISTS `blood_banks`;
+
+-- Drop the Bllod Group table
+DROP TABLE IF EXISTS `blood_groups`;
+
+-- Drop the Locations table
+DROP TABLE IF EXISTS `locations`;
+
+/*DROP USER 'public'*/
+-- Drop the user 'public'
+DROP USER IF EXISTS 'public'@'172.17.0.1';
+
+-- Drop the database
+DROP DATABASE `blood_donors_org`;
